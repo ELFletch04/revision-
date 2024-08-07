@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nando's Back Grill Reference</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Nando's Back Grill Reference</h1>
+        <button id="switchMode" onclick="window.location.href='front-grill.html'">Switch to Front Grill</button>
+    </header>
+    
+    <main id="content">
+        <section id="instructions">
+            <h2>Instructions</h2>
+
+            <!-- Pittas Section -->
+            <div id="pittas" class="category">
+                <h3>Pittas</h3>
+                <div class="item">
+                    <h4>Normal Pitta</h4>
+                    <button class="toggle-btn" onclick="toggleItem('normal-pitta')">Hide</button>
+                    <ul id="normal-pitta">
+                        <li>Pitta (Toasted)</li>
+                        <li>Mayo</li>
+                        <li>Rainbow slaw</li>
+                        <li>Chicken fillet (whole)</li>
+                    </ul>
+                </div>
+                <div class="item">
+                    <h4>Beanie Pitta</h4>
+                    <button class="toggle-btn" onclick="toggleItem('beanie-pitta')">Hide</button>
+                    <ul id="beanie-pitta">
+                        <li>Pitta (Toasted)</li>
+                        <li>Mayo</li>
+                        <li>Rainbow slaw</li>
+                        <li>Beanie</li>
+                    </ul>
+                </div>
+                <div class="item">
+                    <h4>Fino Pitta</h4>
+                    <button class="toggle-btn" onclick="toggleItem('fino-pitta')">Hide</button>
+                    <ul id="fino-pitta">
+                        <li>Pitta (Toasted)</li>
+                        <li>2x Halloumi slices</li>
+                        <li>Caramelized onion</li>
+                        <li>Garlic aioli</li>
+                        <li>Lettuce</li>
+                    </ul>
+                </div>
+                <div class="item">
+                    <h4>Nandino</h4>
+                    <button class="toggle-btn" onclick="toggleItem('nandino')">Hide</button>
+                    <ul id="nandino">
+                        <li>Pitta (toasted/cut in half)</li>
+                        <li>Lettuce</li>
+                        <li>Mayo</li>
+                        <li>Ketchup</li>
+                        <li>Chicken fillet (whole)</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Wraps Section -->
+            <div id="wraps" class="category">
+                <h3>Wraps</h3>
+                <div class="item">
+                    <h4>Normal Wrap</h4>
+                    <button class="toggle-btn" onclick="toggleItem('normal-wrap')">Hide</button>
+                    <ul id="normal-wrap">
+                        <li>Yoghurt</li>
+                        <li>Chilli jam</li>
+                        <li>Lettuce</li>
+                        <li>Chicken fillet (chopped into strips)</li>
+                    </ul>
+                </div>
+                <div class="item">
+                    <h4>Beanie Wrap</h4>
+                    <button class="toggle-btn" onclick="toggleItem('beanie-wrap')">Hide</button>
+                    <ul id="beanie-wrap">
+                        <li>Yoghurt</li>
+                        <li>Chilli jam</li>
+                        <li>Lettuce</li>
+                        <li>Beanie</li>
+                    </ul>
+                </div>
+                <div class="item">
+                    <h4>Loaded Wrap</h4>
+                    <button class="toggle-btn" onclick="toggleItem('loaded-wrap')">Hide</button>
+                    <ul id="loaded-wrap">
+                        <li>2x pulled chicken (microwave then grill and baste)</li>
+                        <li>Cesar dressing</li>
+                        <li>Peri tamer</li>
+                        <li>2x avocado</li>
+                        <li>Peri crumb</li>
+                        <li>Pink pickled onion</li>
+                        <li>Lettuce</li>
+                    </ul>
+                </div>
+                <div class="item">
+                    <h4>Imitator</h4>
+                    <button class="toggle-btn" onclick="toggleItem('imitator')">Hide</button>
+                    <ul id="imitator">
+                        <li>Imitator</li>
+                        <li>Chilli jam</li>
+                        <li>Lettuce</li>
+                        <li>Garlic perinaise</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Burgers Section -->
+            <div id="burgers" class="category">
+                <h3>Burgers</h3>
+                <div class="item">
+                    <h4>Normal Burger</h4>
+                    <button class="toggle-btn" onclick="toggleItem('normal-burger')">Hide</button>
+                    <ul id="normal-burger">
+                        <li>Normal bread</li>
+                        <li>Peri ketchup [top]</li>
+                        <li>Mayo [bottom]</li>
+                        <li>Lettuce [bottom]</li>
+                        <li>Tomato [bottom]</li>
+                        <li>Chicken fillet</li>
+                    </ul>
+                </div>
+                <div class="item">
+                    <h4>Butterfly Burger</h4>
+                    <button class="toggle-btn" onclick="toggleItem('butterfly-burger')">Hide</button>
+                    <ul id="butterfly-burger">
+                        <li>Normal bread</li>
+                        <li>Peri ketchup [top]</li>
+                        <li>Mayo [bottom]</li>
+                        <li>Lettuce [bottom]</li>
+                        <li>Tomato [bottom]</li>
+                        <li>Chicken butterfly (on front grill)</li>
+                    </ul>
+                </div>
+                <div class="item">
+                    <h4>Beanie Burger</h4>
+                    <button class="toggle-btn" onclick="toggleItem('beanie-burger')">Hide</button>
+                    <ul id="beanie-burger">
+                        <li>Normal bread</li>
+                        <li>Peri ketchup [top]</li>
+                        <li>Mayo [bottom]</li>
+                        <li>Lettuce [bottom]</li>
+                        <li>Tomato [bottom]</li>
+                        <li>Beanie</li>
+                    </ul>
+                </div>
+                <div class="item">
+                    <h4>Churrasco</h4>
+                    <button class="toggle-btn" onclick="toggleItem('churrasco')">Hide</button>
+                    <ul id="churrasco">
+                        <li>Garlic bread</li>
+                        <li>Pink pickled onion [top]</li>
+                        <li>Perinaise [bottom]</li>
+                        <li>Sweaty lettuce [bottom]</li>
+                    </ul>
+                </div>
+                <div class="item">
+                    <h4>Sunset</h4>
+                    <button class="toggle-btn" onclick="toggleItem('sunset')">Hide</button>
+                    <ul id="sunset">
+                        <li>Toasted bolo</li>
+                        <li>Red pepper chutney [top]</li>
+                        <li>Mayo [bottom]</li>
+                        <li>Lettuce [bottom]</li>
+                        <li>2x half cheese [bottom]</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Solo Items Section -->
+            <div id="solo-items" class="category">
+                <h3>Solo Items</h3>
+                <div class="item">
+                    <h4>Imitator Patty / Mushroom</h4>
+                    <button class="toggle-btn" onclick="toggleItem('imitator-patty')">Hide</button>
+                    <ul id="imitator-patty">
+                        <li>(Microwave 30 sec)</li>
+                        <li>(Grill)</li>
+                    </ul>
+                </div>
+                <div class="item">
+                    <h4>Chickpea / Beanie Patty</h4>
+                    <button class="toggle-btn" onclick="toggleItem('chickpea-patty')">Hide</button>
+                    <ul id="chickpea-patty">
+                        <li>(Clam shell on setting 2)</li>
+                        <li>(Put on clean section of grill / baste)</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Other Items Section -->
+            <div id="other-items" class="category">
+                <h3>Other Items</h3>
+                <div class="item">
+                    <h4>Loaded Chips</h4>
+                    <button class="toggle-btn" onclick="toggleItem('loaded-chips')">Hide</button>
+                    <ul id="loaded-chips">
+                        <li>1 x pulled chicken (microwave / baste and grill)</li>
+                        <li>2 slices cheese</li>
+                        <li>Peri chips in large bowl (from coord)</li>
+                        <li>(Put together)</li>
+                        <li>Drizzle peri tamer</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+    </main>
+</body>
+</html>
